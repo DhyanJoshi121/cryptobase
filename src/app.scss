@@ -5,6 +5,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  // background: rgb(3 3 3 / 0.1) !important;
 }
 
 $primary-color: #ffffff;
@@ -31,9 +32,14 @@ $darkmode-color: #111315;
 //     color: var(--pink) !important;
 // }
 
+html {
+  font-size: 62.5%;
+}
+
 .app {
   display: flex;
   overflow: hidden;
+  height: 100vh;
   font-family: 'Poppins', sans-serif;
 }
 
@@ -47,6 +53,8 @@ $darkmode-color: #111315;
 .main {
   flex: 0.8;
   width: 100%;
+  height: 100%;
+  overflow-y: scroll;
 }
 .routes {
   padding: 20px;
@@ -86,6 +94,17 @@ $darkmode-color: #111315;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.home-heading-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+img {
+  width: 3rem;
 }
 
 // @media screen and (max-width:1300px){
